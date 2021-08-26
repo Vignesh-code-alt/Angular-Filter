@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+ 
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+ 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.ag-icon.ag-icon-filter {
+    display: none !important;
+}
+.ag-theme-alpine .ag-row {
+ 
+    border-width: 0px;}
+
+    .mat-toolbar-multiple-rows {
+        min-height: 0;
+    }
+    .ag-header-row.ag-header-row-column {
+        background: #009ada;
+        color: white;
+    }

@@ -1,0 +1,58 @@
+mat-toolbar-row.mat-toolbar-row {
+     background: -webkit-linear-gradient(top, #1d3c61 0, #152136 100%);
+     color: white;
+     height: 50px;
+     
+}
+a {
+    color: white;
+     display: flex;
+    padding: 0px 12px;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    cursor: pointer;
+}
+
+a:hover {
+    color: white;
+    font-weight:500 ;
+    text-decoration: none;
+ }
+ 
+.nav a{
+    position: relative;
+}
+.nav a:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0;
+    background-image: linear-gradient(
+270deg
+, #6AD7FF, #0060D4);
+    bottom: -4px;
+    visibility: hidden;
+    transition: 0.4s all;
+}
+.nav a:hover:before {
+    visibility: visible;
+    width: 75%;
+    transition: 0.4s all;
+}
+.nav a.is-active{
+    color: #629ce2;
+}
+.nav a.is-active:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 75%;
+    background-image: linear-gradient(
+270deg
+, #6AD7FF, #0060D4);
+    bottom: -4px;
+    visibility: visible;
+}  
+.nav-rightwidth{
+    position: relative;
+}
